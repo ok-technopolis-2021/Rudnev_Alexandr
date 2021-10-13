@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>My CV</title>
+    <link href="styles/style.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="content">
-    <div class="preview">
-        <h1 class="my_name">Sasha Rudnev</h1>
-        <h2 class="my_status">Бездельник</h2>
-    </div>
+<div class="cv">
+    <section class="cv-info">
+        <section class="cv-info-general">
+            <section class="cv-info-general-avatar">
+                <img id="avatar" src="assets/view/avatar.png" alt="my_avatar">
+            </section>
+            <section class="cv-info_general-name">
+                Sasha Rudnev
+            </section>
+            <section class="cv-info-general-position">
+                Idler
+            </section>
+            <section class="cv-info-general-links">
+                <section class="cv-info-general-links-github">
+                    <a href="https://github.com/Ralex2105">
+                        <img id="github" src="assets/view/Octocat.png" alt="github">
+                    </a>
+                </section>
+                <section class="cv-info-general-links-vk">
+                    <a href="https://github.com/Ralex2105">
+                        <img id="vk" src="assets/view/vk.png" alt="vk">
+                    </a>
+                </section>
+                <section class="cv-info-general-links-telegram">
+                    <a href="https://github.com/Ralex2105">
+                        <img id="telegram" src="assets/view/tg.png" alt="telegram">
+                    </a>
+                </section>
+            </section>
+            <section class="cv-info-download">
+                <button id="download-button" type="submit">Download CV</button>
+            </section>
+        </section>
+        <section class="cv-info-copyright">©2021 All rights reserved.</section>
+    </section>
 
-    <img src="assets/view/avatar.png"
-         width="250"
-         height="250"
-         alt="my_avatar" />
-
-    <div class="about_me">
-        <div class="my_name">
-            Саша Руднев
-        </div>
-        <div class="my_status">
-            Бездельник. Ищу работу. Ничего не умею!
-        </div>
-        <div class="my_experience">
-            Я никогда не работал :) ПАМАГИТЕ
-        </div>
-        <div class="three-points">
-            А что это за три круга? я не понимаю...
-        </div>
-    </div>
-
-
-    <div class="button-link">
-        <div class="button_to_download_cv">
-            <a href="cv.html" download="proposed_file_name">Загрузить CV</a>
-        </div>
-        <div class="github-link">
-            <a href="https://github.com/Ralex2105">Мой говно-код!</a>
-        </div>
-    </div>
-
-    <div class="known-info">
-        <div class="law-info">
-            @2021 All rights reversed
-        </div>
-    </div>
+    <section class="cv-another-info">
+        <section class="cv-another-info-experience">
+            <section class="cv-another-info-experience-name">
+                Саша Руднев
+            </section>
+            <section class="cv-another-info-experience-position">
+                Бездельник
+            </section>
+        </section>
+    </section>
 </div>
 </body>
 </html>
