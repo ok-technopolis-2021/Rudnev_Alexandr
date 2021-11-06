@@ -1,3 +1,5 @@
+@import "themes.css";
+
 html {
     height: 100%;
 }
@@ -10,52 +12,31 @@ body {
     font-family: Helevetica, sans-serif;
 }
 
-.cv {
+.business-card {
     width: 1127px;
     height: 595px;
     display: flex;
     left: 0;
     top:0;
-    background: #444444;
+    background: var(--bg);
     border-radius: 30px;
-    color: white;
+    color: var(--text);
 }
 
-.cv-info {
+.info {
     width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cv-info-general {
+.info-general {
     height: 563px;
     display: flex;
     flex-direction: column;
     justify-self: center;
     align-items: center;
     margin-top: 70px;
-}
-
-.cv-info_general-name{
-    margin-top: 25px;
-    margin-bottom: 8px;
-    font-size: 38px;
-}
-
-.cv-info-general-links {
-    display: flex;
-    flex-direction: row;
-    margin-top: 16px;
-    margin-bottom: 51px;
-}
-
-.cv-info-copyright {
-    display: flex;
-    font-size: 14px;
-    margin-top: 66px;
-    margin-bottom: 14px;
-    height: 16px;
 }
 
 #avatar {
@@ -65,7 +46,20 @@ body {
     box-shadow: 12px 12px 7px rgba(0,0,0,0.2);
 }
 
-.cv-info-general-links-vk {
+.info-general__name{
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 38px;
+}
+
+.info__links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 51px;
+}
+
+.link__vk {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -74,40 +68,67 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: #C4C4C4;
+    background: var(--page);
 }
 
 #download-button {
-    color: white;
+    color: var(--text);
     padding: 12px 32px 12px 32px;
     text-align: center;
     font-size: 18px;
     border-radius: 40px;
-    border: 3px solid #FFFFFF;
-    background-color: #444444;
+    border: 3px solid var(--text);
+    background-color: var(--bg);
 }
 
 #download-button:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--backgtround-another);
+    color: var(--text-another);
 }
 
+.info-general__copyright {
+    display: flex;
+    font-size: 14px;
+    margin-top: 66px;
+    margin-bottom: 14px;
+    height: 16px;
+}
 
-.cv-another-info-experience {
+.experience-general {
     width: 747px;
     height: 595px;
     display: flex;
     flex-direction: column;
-    background: #222222;
+    background: var(--background-experience);
     border-radius: 30px;
     justify-content: center;
     align-items: center;
 }
 
-.cv-another-info-experience-name {
+#switch {
+    color: var(--text);
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 7px;
+    border-radius: 40px;
+    border: 3px solid var(--text);
+    background-color: var(--background-experience);
+}
+
+.change-theme {
+    margin-top: 10px;
+}
+
+#switch:hover {
+    background-color: var(--backgtround-another);
+    color: var(--text-another);
+}
+
+.experience-general__name {
     font-size: 62px;
 }
 
-.cv-another-info-experience-position {
+.experience-general__position {
     font-size: 22px;
 }
+

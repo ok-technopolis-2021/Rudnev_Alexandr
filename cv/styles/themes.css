@@ -1,0 +1,17 @@
+:root .dark {
+    --page: #C4C4C4;
+    --bg:  #444444;
+    --background-experience: #222222;
+    --text: #FFFFFF;
+    --backgtround-another: #FFFFFF;
+    --text-another: #111111;
+}
+
+:root .light {
+    --page: #C4C4C4;
+    --bg: #FFFFFF;
+    --background-experience: #bababa;
+    --text: #111111;
+    --backgtround-another: #444444;
+    --text-another: #FFFFFF;
+}
