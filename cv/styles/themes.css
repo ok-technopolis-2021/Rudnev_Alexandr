@@ -7,7 +7,7 @@
     --text-another: #111111;
 }
 
-:root .light {
+.light {
     --page: #C4C4C4;
     --bg: #FFFFFF;
     --background-experience: #bababa;
