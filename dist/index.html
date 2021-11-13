@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My CV</title>
-    <link href="styles/style.css" rel="stylesheet"/>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- endinject -->
+
 </head>
-<body class="dark">
+<body class="dark-theme">
 <main class="business-card">
     <article class="info">
         <section class="info-general">
             <div class="info-general__avatar">
-                <img id="personal_avatar" src="assets/view/avatar.png" alt="my_avatar">
+                <img id="personal_avatar" src="assets/avatar.png" alt="my_avatar">
             </div>
             <div class="info-general__name">
                 Sasha Rudnev
@@ -22,18 +25,19 @@
             <section class="info__links">
                 <div class="link__github link">
                     <link href="https://github.com/Ralex2105">
-                        <img id="github" src="assets/view/Octocat.png" alt="github">
+                        <img id="github" src="assets/Octocat.png" alt="github">
                 </div>
                 <div class="link__vk link">
                     <link href="https://github.com/Ralex2105">
-                        <img id="vk" src="assets/view/vk.png" alt="vk">
+                        <img id="vk" src="assets/vk.png" alt="vk">
                 </div>
                 <div class="link__tg link">
                     <link href="https://github.com/Ralex2105">
-                        <img id="telegram" src="assets/view/tg.png" alt="telegram">
+                        <img id="telegram" src="assets/tg.png" alt="telegram">
                 </div>
             </section>
             <section class="info-general__download-button">
+
                 <button id="download-button" type="submit">Download CV</button>
             </section>
         </section>
@@ -47,12 +51,14 @@
             <div class="experience-general__position">
                 Бездельник
             </div>
-            <section class="change-theme" onclick="changeTheme()">
-                <button id="switch" type="submit">Change theme</button>
+            <section class="switch-theme">
+                <button id="switch-theme-button" type="submit">Change theme</button>
             </section>
         </section>
     </article>
-    <script type="text/javascript" src="changeTheme.js"></script>
 </main>
+<!-- inject:js -->
+<script src="./app.js"></script>
+<!-- endinject -->
 </body>
 </html>

@@ -1,6 +1,5 @@
-@import "themes.css";
 
-html {
+    html {
     height: 100%;
 }
 
@@ -105,7 +104,7 @@ body {
     align-items: center;
 }
 
-#switch {
+#switch-theme-button {
     color: var(--text);
     padding: 10px 16px;
     text-align: center;
@@ -119,7 +118,7 @@ body {
     margin-top: 10px;
 }
 
-#switch:hover {
+#switch-theme-button:hover {
     background-color: var(--backgtround-another);
     color: var(--text-another);
 }
