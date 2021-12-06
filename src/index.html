@@ -9,6 +9,9 @@
 
 </head>
 <body class="dark-theme">
+<section class="switch-theme">
+    <button id="switch-theme-button" type="submit">Change theme</button>
+</section>
 <main class="business-card">
     <article class="info">
         <section class="info-general">
@@ -44,14 +47,20 @@
     </article>
     <article class="experience">
         <section class="experience-general">
-            <div class="experience-general__name">
-                Саша Руднев
-            </div>
-            <div class="experience-general__position">
-                Бездельник
-            </div>
-            <section class="switch-theme">
-                <button id="switch-theme-button" type="submit">Change theme</button>
+            <section class="skills">
+                <h1 class="skills__main">Skills</h1>
+                <div class="skills__add">
+                    <div class="skills-add__name">
+                        <input type="text" id="nameOfSkill" class="skill-add__input" placeholder=" ">
+                        <label for="nameOfSkill" class="skill-add">Skill</label>
+                    </div>
+                    <div class="skills-add__value">
+                        <input type="text" id="valueOfSkill" class="skill-add__input" placeholder=" ">
+                        <label for="valueOfSkill" class="skill-add">Level</label>
+                    </div>
+                    <button class="skills__button" id="skill-button">Add</button>
+                </div>
+                <div class="skills__list"></div>
             </section>
         </section>
     </article>
