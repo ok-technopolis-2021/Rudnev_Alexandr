@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My CV</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+
+</head>
+<body class="dark-theme">
+<section class="switch-theme">
+    <button id="switch-theme-button" type="submit">Change theme</button>
+</section>
+<main class="business-card">
+    <article class="info">
+        <section class="info-general">
+            <div class="info-general__avatar">
+                <img id="personal_avatar" src="assets/avatar.png" alt="my_avatar">
+            </div>
+            <div class="info-general__name">
+                Sasha Rudnev
+            </div>
+            <div class="info-general__position">
+                Idler
+            </div>
+            <section class="info__links">
+                <div class="link__github link">
+                    <link href="https://github.com/Ralex2105">
+                        <img id="github" src="assets/Octocat.png" alt="github">
+                </div>
+                <div class="link__vk link">
+                    <link href="https://github.com/Ralex2105">
+                        <img id="vk" src="assets/vk.png" alt="vk">
+                </div>
+                <div class="link__tg link">
+                    <link href="https://github.com/Ralex2105">
+                        <img id="telegram" src="assets/tg.png" alt="telegram">
+                </div>
+            </section>
+            <section class="info-general__download-button">
+
+                <button id="download-button" type="submit">Download CV</button>
+            </section>
+        </section>
+        <footer class="info-general__copyright">©2021 All rights reserved.</footer>
+    </article>
+    <article class="experience">
+        <section class="experience-general">
+            <section class="skills">
+                <h1 class="skills__main">Skills</h1>
+                <div class="skills__add">
+                    <div class="skills-add__name">
+                        <input type="text" id="nameOfSkill" class="skill-add__input" placeholder=" ">
+                        <label for="nameOfSkill" class="skill-add">Skill</label>
+                    </div>
+                    <div class="skills-add__value">
+                        <input type="text" id="valueOfSkill" class="skill-add__input" placeholder=" ">
+                        <label for="valueOfSkill" class="skill-add">Level</label>
+                    </div>
+                    <button class="skills__button" id="skill-button">Add</button>
+                </div>
+                <div class="skills__list"></div>
+            </section>
+        </section>
+    </article>
+</main>
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>

@@ -1,0 +1,113 @@
+.skills__main {
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.skills__add {
+  display: flex;
+}
+
+.skills-add__name,
+.skills-add__value {
+  position: relative;
+}
+
+input {
+  background: none;
+  color: var(--text);
+  font-size: 18px;
+  padding: 10px 10px 10px;
+  display: block;
+  border: none;
+  border-radius: 0;
+  border-bottom: 0 solid;
+  border-color: var(--text);
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--text);
+  border-radius: 0;
+}
+
+input:focus ~ label,
+label:active {
+  visibility: hidden;
+}
+
+input:not(:placeholder-shown) ~ label,
+label:active {
+  visibility: hidden;
+}
+
+label {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+#skill-button,
+#skill-delete-button {
+  color: var(--text);
+  text-align: center;
+  border-radius: 40px;
+  padding: 6px 15px;
+  border: 3px solid var(--text);
+  background-color: var(--background-experience);
+}
+
+#skill-button:hover,
+#skill-delete-button:hover {
+  background-color: var(--backgtround-another);
+  color: var(--text-another);
+}
+
+#skills-button {
+  font-size: 14px;
+  padding: 6px 10px 6px 10px;
+
+}
+#skill-delete-button {
+  font-size: 8px;
+  padding: 6px 10px 6px 10px;
+}
+
+.skills__list {
+  padding: 25px 0;
+  font-weight: bold;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skill {
+  border: 1px solid;
+}
+.skill__about {
+  display: flex;
+  align-items: center;
+  flex-basis: 10%;
+  margin: 3px;
+}
+.skill__bar {
+  width: 100%;
+  border: 2px solid;
+  border-color: var(--text);
+  margin-right: 30px;
+  margin-top: 5px;
+  background-color: var(--background-experience);
+}
+.skill__name {
+  width: 80px;
+  margin-right: 130px;
+}
+
+.skill__level {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--text);
+}
